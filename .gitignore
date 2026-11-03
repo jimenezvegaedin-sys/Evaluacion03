@@ -1,0 +1,26 @@
+# Dependencias y salidas
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+next-env.d.ts
+
+# Credenciales y configuración local: nunca publicar
+.env
+.env.*
+!.env.example
+*token*
+*secret*
+*.pem
+*.key
+*.pfx
+*.p12
+.vercel/
+*.log
+
+# Documento académico original; se conserva solo localmente
+*.docx
+~$*
