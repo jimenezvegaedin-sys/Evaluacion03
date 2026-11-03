@@ -1,0 +1,10 @@
+.card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: transform 180ms ease, box-shadow 180ms ease; }
+.card:hover, .card:focus-within { transform: translateY(-4px); box-shadow: var(--shadow); }
+.link { display: block; height: 100%; }
+.image { position: relative; aspect-ratio: 1.35; margin: 16px; }
+.image img { object-fit: contain; transition: transform 180ms ease; }
+.card:hover .image img { transform: scale(1.035); }
+.body { padding: 4px 24px 24px; }
+.body h2 { font-size: 19px; margin-bottom: 14px; }
+.category { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1.4px; margin-bottom: 8px; }
+.more { color: var(--blue); font-size: 13px; font-weight: 650; display: flex; justify-content: space-between; }

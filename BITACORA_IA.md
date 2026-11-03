@@ -18,7 +18,7 @@ Registro de consultas técnicas, soluciones evaluadas y comprobaciones del proye
 - **Resumen de la respuesta:** catálogo tipado con seis productos; ruta `[slug]` con `params` asíncronos, `generateMetadata`, `generateStaticParams` y 404 personalizada. Componentes ProductCard y SectionTitle reutilizables.
 - **Decisión:** aceptado; se utilizaron seis productos visibles en el anexo en vez del mínimo de tres.
 - **Justificación:** permite reproducir la cuadrícula de referencia sin inventar SKU, stock ni precios. Las imágenes se recortaron del anexo como recursos; no son evidencias de ejecución. Se mantuvo la versión del App Router actual, sin APIs de Pages Router.
-- **Verificación:** pendiente de registrar al cerrar la etapa.
+- **Verificación:** ESLint y build correctos; `node scripts/check-routes.mjs` comprobó 12 URLs válidas con títulos y descripciones únicos y dos respuestas HTTP 404 (URL inexistente y slug inválido).
 
 ## Registro de correcciones
 

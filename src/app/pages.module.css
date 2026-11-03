@@ -1,0 +1,28 @@
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.twoColumns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; align-items: start; }
+.light { background: var(--surface); }
+.dark { background: var(--dark); color: var(--white); padding-block: 80px; }
+.panel { border: 1px solid var(--border); background: var(--white); border-radius: var(--radius); padding: 24px; color: var(--ink); }
+.panel h2 { font-size: 20px; }
+.photo { position: relative; aspect-ratio: 1.3; }
+.photo img { object-fit: cover; }
+.photoTitle { background: #54585d; color: var(--white); text-align: center; font-size: 15px; padding: 14px; margin-bottom: 16px; }
+.service { background: #252525; padding: 30px; border-radius: var(--radius); }
+.service h2 { font-size: 19px; }
+.service p { color: #d7d7dc; margin: 0; font-size: 14px; }
+.brandLogo { position: relative; height: 65px; width: 170px; margin-bottom: 20px; }
+.brandLogo img { object-fit: contain; object-position: left; }
+.brandDescription { font-size: 13px; line-height: 1.9; color: var(--muted); margin: 0; }
+.detailImage { position: relative; aspect-ratio: 1; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); }
+.detailImage img { object-fit: contain; padding: 30px; }
+.detail h1 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 24px; }
+.category { color: var(--blue); text-transform: uppercase; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 3px; background: var(--red); color: white; padding: 12px 24px; font-size: 14px; font-weight: 600; border: 1px solid transparent; transition: background 180ms; }
+.button:hover { background: #bf2031; }
+.back { display: inline-block; margin-bottom: 25px; font-size: 13px; color: var(--blue); }
+.note { margin-block: 32px 0; color: var(--muted); font-size: 12px; }
+.notFound { min-height: 55vh; text-align: center; display: grid; align-content: center; justify-items: center; gap: 12px; }
+.notFound strong { color: var(--blue); font-size: 88px; line-height: 1; }
+.map { width: 100%; height: 445px; border: 1px solid var(--border); border-radius: var(--radius); }
+@media (max-width: 950px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .twoColumns { gap: 25px; } }
+@media (max-width: 600px) { .grid, .twoColumns { grid-template-columns: minmax(0, 1fr); } .dark { padding-block: 52px; } .map { height: 300px; } }
