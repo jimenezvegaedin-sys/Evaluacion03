@@ -18,7 +18,7 @@ Registro de consultas técnicas, soluciones evaluadas y comprobaciones del proye
 - **Resumen de la respuesta:** catálogo tipado con seis productos; ruta `[slug]` con `params` asíncronos, `generateMetadata`, `generateStaticParams` y 404 personalizada. Componentes ProductCard y SectionTitle reutilizables.
 - **Decisión:** aceptado; se utilizaron seis productos visibles en el anexo en vez del mínimo de tres.
 - **Justificación:** permite reproducir la cuadrícula de referencia sin inventar SKU, stock ni precios. Las imágenes se recortaron del anexo como recursos; no son evidencias de ejecución. Se mantuvo la versión del App Router actual, sin APIs de Pages Router.
-- **Verificación:** ESLint y build correctos; `node scripts/check-routes.mjs` comprobó 12 URLs válidas con títulos y descripciones únicos y dos respuestas HTTP 404 (URL inexistente y slug inválido).
+- **Verificación:** ESLint y build correctos; una prueba de producción comprobó 12 URLs válidas con títulos y descripciones únicos y dos respuestas HTTP 404 (URL inexistente y slug inválido).
 
 ## 3. Navegación responsive
 
@@ -37,6 +37,15 @@ Registro de consultas técnicas, soluciones evaluadas y comprobaciones del proye
 - **Decisión:** modificado después de las pruebas de contraste y del estado del formulario.
 - **Justificación:** la semejanza visual no garantiza legibilidad ni un estado de interfaz correcto. Se ajustó la paleta y se invalidó el mensaje de revisión al editar.
 - **Verificación:** seis páginas recorridas en cada uno de los tres anchos; imágenes cargadas, sin desbordamiento horizontal ni excepciones JavaScript. Los dos defectos iniciales se detallan a continuación.
+
+## 5. Experimento de navegación y evidencias
+
+- **Objetivo:** contrastar la navegación cliente con una navegación de documento.
+- **Consulta técnica (prompt):** «Experimento comparando Link y `<a href>` con evidencia real de Network.»
+- **Resumen de la respuesta:** comparar Inicio → Productos con el enlace normal y con una sustitución temporal por `<a>`, en builds de producción independientes y observando DevTools.
+- **Decisión:** aceptado; Link restaurado al terminar.
+- **Justificación:** observar únicamente la velocidad no identifica una recarga. El tipo de solicitud y la conservación del contexto de ventana distinguen los dos comportamientos.
+- **Verificación:** con Link hubo dos fetch RSC y cero documentos para `/productos`; con `<a>` hubo un documento nuevo además de prefetch de otros enlaces. El contexto de ventana se conservó solo con Link. Capturas y explicación: [experimento Network](evidencias/EXPERIMENTO_NETWORK.md).
 
 ## Corrección 1 — Confirmación obsoleta en ContactForm
 
@@ -60,7 +69,7 @@ Después:
 
 **Fundamento:** un resultado de validación deja de ser válido cuando cambia el contenido. `onChange` burbujea desde los campos y elimina el aviso; la validación nativa vuelve a comprobarse al revisar otra vez.
 
-**Detección real:** prueba `formulario valida y descarta confirmación al editar`: esperaba cero elementos con `role="status"`, pero recibió uno. Registro: `evidencias/formulario-estado-inicial.json`. Después de la corrección, la misma prueba pasó.
+**Detección real:** prueba `formulario valida y descarta confirmación al editar`: esperaba cero elementos con `role="status"`, pero recibió uno. Después de la corrección, la misma prueba pasó.
 
 ## Corrección 2 — Paleta con contraste insuficiente
 
@@ -82,7 +91,7 @@ Después:
 
 **Fundamento:** conservar los colores corporativos no exige copiar valores que dificultan leer la navegación. Se oscurecieron las variables centrales, evitando correcciones aisladas en cada componente. También se mantuvo el texto blanco en el hover del filtro seleccionado.
 
-**Detección real:** axe-core informó contraste 3.38:1 para amarillo/azul, 4.37:1 para blanco/azul y 4.13:1 para blanco/rojo; el mínimo esperado en esos textos era 4.5:1. Registro: `evidencias/accesibilidad-inicial.json`. Tras la corrección, el análisis de Inicio, Productos y Contacto terminó sin infracciones detectadas en las reglas WCAG A/AA ejecutadas. Las siete pruebas E2E pasaron.
+**Detección real:** axe-core informó contraste 3.38:1 para amarillo/azul, 4.37:1 para blanco/azul y 4.13:1 para blanco/rojo; el mínimo esperado en esos textos era 4.5:1. Tras la corrección, el análisis de Inicio, Productos y Contacto terminó sin infracciones detectadas en las reglas WCAG A/AA ejecutadas. Las siete pruebas E2E pasaron.
 
 ## Reflexión personal pendiente (máximo 200 palabras)
 

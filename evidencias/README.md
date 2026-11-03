@@ -2,7 +2,7 @@
 
 ## Capturas responsive
 
-Capturadas directamente con Playwright/Chromium contra `next start` en `127.0.0.1:3100`, viewport de altura 900 px, escala 1 y página completa. Comando: `npm run test:e2e` después de `npm run build`.
+Capturadas directamente con Playwright/Chromium contra `next start` en `127.0.0.1:3100`, viewport de altura 900 px, escala 1 y página completa.
 
 | Página | 375 px | 768 px | 1280 px |
 | --- | --- | --- | --- |
@@ -11,17 +11,24 @@ Capturadas directamente con Playwright/Chromium contra `next start` en `127.0.0.
 
 Las imágenes no están retocadas. Las fotos de `public/images/` son recursos del anexo, no evidencias de esta aplicación.
 
-## Problemas encontrados y corregidos
+Capturas complementarias a 1280 px: `nosotros-1280.png`, `servicios-1280.png`, `marcas-1280.png` y `contacto-1280.png`. La captura de Contacto se realizó esperando a que cargara el mapa externo.
 
-- `formulario-estado-inicial.json`: estado obsoleto del formulario, registrado al fallar la prueba antes de corregirlo.
-- `accesibilidad-inicial.json`: resultados reales de axe-core antes de ajustar la paleta.
+## Build
 
-Después de las correcciones: siete pruebas E2E aprobadas, incluidas las regresiones del formulario y contraste. Las seis páginas se comprobaron en los tres anchos, sin desbordamiento horizontal, imágenes rotas ni excepciones de JavaScript.
+`build-terminal.png`: captura de una terminal web xterm.js que ejecutó realmente `npm run build` y recibió en directo stdout/stderr del proceso. Terminó con código de salida 0. No es una captura de VS Code y no contiene una salida prefabricada.
 
-## Evidencias por completar
+Para adjuntar además una captura desde VS Code: abrir la carpeta, abrir Terminal → Nueva terminal, ejecutar `npm run build`, esperar a la tabla de rutas y capturar con Recortes de Windows. Deben verse el comando y el resultado completo; guardar como `evidencias/build-vscode.png` y revisar que no haya otras pestañas o datos privados visibles.
 
-- Captura gráfica de la salida real de `npm run build`.
-- Experimento y captura de la pestaña Network.
-- Captura del historial de commits en GitHub.
+## Network
 
-Los logs o resultados automatizados no sustituyen una captura de DevTools ni una captura gráfica de terminal.
+- `network-link.png`: DevTools real, solicitudes fetch/RSC, sin documento nuevo de Productos.
+- `network-anchor.png`: DevTools real, solicitud `document` al usar temporalmente `<a href>`.
+- [Método, fragmentos y resultados](EXPERIMENTO_NETWORK.md).
+
+## Historial de GitHub
+
+`github-commits.png`: captura directa de https://github.com/jimenezvegaedin-sys/Evaluacion03/commits/main/ en Chromium. Muestra cinco commits progresivos, hasta `ad653bf`, publicados en ese momento. Los commits posteriores se consultan en el historial en línea.
+
+## Comprobaciones
+
+Siete pruebas E2E aprobadas, incluidas las regresiones del formulario y contraste. Las seis páginas se comprobaron en los tres anchos, sin desbordamiento horizontal, imágenes rotas ni excepciones de JavaScript. Los dos errores y sus correcciones se explican en `BITACORA_IA.md`.

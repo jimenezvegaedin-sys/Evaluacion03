@@ -1,6 +1,6 @@
 # Origen de los recursos
 
-Recortes de las capturas del anexo de `EC03-S12-JVENTURA-2026-02.docx`, empleado como referencia académica. Generados mediante `scripts/extract-reference-assets.py` con Pillow; no son fotografías originales ni capturas de esta aplicación.
+Recortes de las capturas del anexo de `EC03-S12-JVENTURA-2026-02.docx`, empleado como referencia académica. Imágenes extraídas del DOCX y recortadas con Pillow; no son fotografías originales ni capturas de esta aplicación.
 
 - Logo, hero: página 8, captura de Inicio. El hero usa la zona izquierda sin el texto del sitio antiguo.
 - Equipo, almacén, tienda y empresa: página 8, captura de Nosotros.

@@ -49,7 +49,7 @@ El contenido comercial estable puede generarse al compilar (SSG), una forma de r
 
 Los componentes de contenido se mantienen de servidor: no necesitan hooks ni eventos y pueden importar los datos sin enviarlos todos como estado del navegador. Un Server Component puede incluir un Client Component; no es necesario marcar el layout completo como cliente. `Link` se admite dentro de componentes servidor.
 
-El experimento Link frente a `<a href>` se documentará con sus resultados de Network en la etapa de evidencias.
+El experimento Link frente a `<a href>` está documentado en [evidencias/EXPERIMENTO_NETWORK.md](evidencias/EXPERIMENTO_NETWORK.md). Con Link no hubo una solicitud de documento para `/productos`; con el enlace nativo sí la hubo. En ambas variantes hubo prefetch porque otros enlaces seguían siendo Link. La navegación cliente conserva el documento y el layout; no implica ausencia total de tráfico de red.
 
 ## Estilos, imágenes y fuente (Parte 4, p. 5)
 

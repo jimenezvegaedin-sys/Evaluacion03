@@ -27,6 +27,9 @@ npm run start
 - [Requisitos con páginas de origen](REQUISITOS.md)
 - [Decisiones y explicaciones técnicas](DECISIONES.md)
 - [Estado de evidencias](evidencias/README.md)
+- [Guía de sustentación de cinco minutos](SUSTENTACION.md)
+- [Conclusiones pendientes de revisión personal](CONCLUSIONES.md)
+- [Informe de revisión](INFORME_FINAL.md)
 
 ## Rutas
 
@@ -64,17 +67,22 @@ RootLayout [S] — idioma, fuente, metadata base
 
 Solo Navbar, ProductCatalog y ContactForm necesitan estado del navegador. Pasar contenido servidor como prop no equivale a importar un Server Component desde un archivo cliente.
 
-## Verificación
+## Comprobaciones locales
 
 ```sh
 npm run lint
+npm run typecheck
 npm run build
-npm run test:routes
-npx playwright install chromium
-npm run test:e2e
+npm run start
 ```
 
-Las pruebas levantan y cierran su propio servidor de producción en `127.0.0.1:3100`; ese puerto debe estar libre. Las capturas responsive se generan directamente en `evidencias/` mediante Chromium. Se comprueban también filtros, menú, enlace activo, imágenes, validación del formulario y contraste automatizado; este último no sustituye una revisión manual de accesibilidad.
+Las pruebas de navegador se realizaron con Playwright/Chromium y las capturas se encuentran en `evidencias/`. Se comprobaron las seis páginas en tres anchos, los filtros, el menú, el enlace activo, las imágenes, la validación del formulario y el contraste automatizado. Este último no sustituye una revisión manual de accesibilidad.
+
+Para revisar manualmente: recorrer las seis rutas, abrir las tarjetas de productos y visitar tanto `/ruta-inexistente` como `/productos/slug-invalido`; ambas deben mostrar la 404 personalizada. En las herramientas responsive del navegador comprobar 375, 768 y 1280 px. En Contacto, completar campos y revisar el aviso; editar un campo debe borrar ese aviso.
+
+## Estado de despliegue
+
+Aplicación disponible para ejecución local. No hay un despliegue público realizado. El entregable de despliegue de la página 6 permanece pendiente.
 
 ## Recursos
 

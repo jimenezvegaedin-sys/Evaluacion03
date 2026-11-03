@@ -24,3 +24,11 @@ next-env.d.ts
 # Documento académico original; se conserva solo localmente
 *.docx
 ~$*
+
+# Herramientas locales de comprobación y captura
+/scripts/
+/tests/
+/playwright.config.ts
+/evidencias/*.json
+/evidencias/*.txt
+/evidencias/*comprobacion.png
