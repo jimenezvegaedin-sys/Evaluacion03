@@ -27,7 +27,7 @@ Para adjuntar además una captura desde VS Code: abrir la carpeta, abrir Termina
 
 ## Historial de GitHub
 
-`github-commits.png`: captura directa de https://github.com/jimenezvegaedin-sys/Evaluacion03/commits/main/ en Chromium. Muestra cinco commits progresivos, hasta `ad653bf`, publicados en ese momento. Los commits posteriores se consultan en el historial en línea.
+`github-commits.png`: captura directa de https://github.com/jimenezvegaedin-sys/Evaluacion03/commits/main/ en Chromium. Muestra seis commits progresivos, hasta `26a8e30`, publicados en ese momento. El commit de cierre de este informe se consulta en el historial en línea.
 
 ## Comprobaciones
 

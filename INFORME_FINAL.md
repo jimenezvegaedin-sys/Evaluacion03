@@ -125,7 +125,7 @@ Auditoría de entrega: 80 archivos, 14 capturas PNG, enlaces Markdown locales co
 - `inicio-768.png`, `productos-768.png`.
 - `inicio-1280.png`, `productos-1280.png`.
 - `nosotros-1280.png`, `servicios-1280.png`, `marcas-1280.png`, `contacto-1280.png`.
-- `github-commits.png`: historial real con cinco commits visibles hasta `ad653bf`.
+- `github-commits.png`: historial real con seis commits visibles hasta `26a8e30`.
 
 ## Commits publicados y comprobados
 
@@ -136,8 +136,9 @@ Auditoría de entrega: 80 archivos, 14 capturas PNG, enlaces Markdown locales co
 | `b9b0c0a` | Organización de la documentación técnica. |
 | `c6910d2` | Rutas, metadata, datos y catálogo dinámico; pruebas de URLs. |
 | `ad653bf` | Navegación, diseño responsive, componentes y pruebas de interfaz. |
+| `26a8e30` | Evidencias de build/Network/GitHub, guía de sustentación, revisión y depuración de la entrega. |
 
-Cada uno se publicó al terminar su etapa y se contrastó el hash local con `refs/heads/main` del remoto. El historial completo y los commits de cierre están en [GitHub](https://github.com/jimenezvegaedin-sys/Evaluacion03/commits/main/).
+Cada uno se publicó al terminar su etapa y se contrastó el hash local con `refs/heads/main` del remoto. El historial completo, incluido el commit de cierre de este informe, está en [GitHub](https://github.com/jimenezvegaedin-sys/Evaluacion03/commits/main/).
 
 ## Estado del despliegue
 
