@@ -1,0 +1,16 @@
+.benefits { border-bottom: 1px solid var(--border); background: var(--surface); }
+.benefitsInner { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding-block: 26px; gap: 30px; }
+.benefit { display: flex; align-items: center; gap: 16px; font-size: 13px; line-height: 1.5; }
+.benefit svg { flex-shrink: 0; color: var(--red); }
+.benefit strong { display: block; font-weight: 650; }
+.benefit span { color: var(--muted); font-size: 11px; }
+.products { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.all { text-align: center; margin: 32px 0 0; color: var(--blue); font-size: 13px; font-weight: 650; }
+.all a { border-bottom: 1px solid var(--blue); padding-bottom: 5px; }
+.cta { background: var(--blue); color: white; }
+.ctaInner { display: flex; justify-content: space-between; gap: 30px; align-items: center; padding-block: 36px; }
+.cta h2 { margin-bottom: 7px; font-size: 24px; }
+.cta p { color: #e2e7f9; font-size: 13px; margin: 0; }
+.cta a { padding: 12px 22px; background: white; color: var(--blue); font-size: 13px; border-radius: 3px; white-space: nowrap; font-weight: 650; }
+@media (max-width: 768px) { .benefitsInner { gap: 16px; } .benefit { gap: 9px; font-size: 11px; } .benefit span { font-size: 10px; } .products { gap: 15px; } .cta h2 { font-size: 20px; } }
+@media (max-width: 600px) { .benefitsInner, .products { grid-template-columns: 1fr; } .benefitsInner { gap: 18px; padding-block: 24px; } .benefit { font-size: 13px; gap: 15px; } .benefit span { font-size: 11px; } .ctaInner { flex-direction: column; align-items: flex-start; gap: 20px; } }

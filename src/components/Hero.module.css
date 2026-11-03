@@ -1,0 +1,26 @@
+.hero { min-height: 590px; position: relative; isolation: isolate; background: #20242d; color: var(--white); overflow: hidden; }
+.image, .shade { position: absolute; inset: 0; z-index: -1; }
+.image { width: 76%; }
+.image img { object-fit: cover; object-position: center 42%; }
+.shade { background: linear-gradient(90deg, #13192312 5%, #13192345 30%, #181e2cf0 75%, #181e2c 100%); }
+.inner { min-height: 590px; display: flex; justify-content: flex-end; align-items: center; padding-block: 85px; }
+.content { max-width: 600px; width: 55%; text-align: right; }
+.eyebrow { color: var(--yellow); font-size: 11px; font-weight: 650; letter-spacing: 2.3px; margin-bottom: 23px; }
+.content h1 { font-size: clamp(30px, 3.4vw, 44px); line-height: 1.18; font-weight: 800; letter-spacing: -1.2px; margin-bottom: 22px; }
+.content h1 span { font-weight: 650; }
+.description { font-size: 16px; color: #e5e7ed; line-height: 1.8; margin-bottom: 30px; }
+.actions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 12px; }
+.primary, .secondary { display: inline-flex; align-items: center; justify-content: center; gap: 18px; font-size: 13px; padding: 12px 20px; border-radius: 3px; border: 1px solid #ffffff70; transition: background 180ms; }
+.primary { background: var(--red); border-color: var(--red); font-weight: 600; }
+.primary:hover { background: #c32235; }
+.secondary:hover { background: #ffffff1f; }
+.caption { position: absolute; bottom: 25px; width: 100%; text-align: center; font-size: 9px; letter-spacing: 2px; color: #c1c5ce; }
+.caption span { color: var(--red); padding-inline: 8px; }
+@media (max-width: 768px) {
+  .hero, .inner { min-height: 560px; }
+  .image { width: 100%; }
+  .shade { background: linear-gradient(90deg, #101725bc, #101725dd); }
+  .content { width: 100%; max-width: 580px; text-align: center; margin-inline: auto; }
+  .actions { justify-content: center; }
+}
+@media (max-width: 420px) { .content h1 { font-size: 31px; } .description { font-size: 14px; } .inner { padding-block: 65px; } .eyebrow { font-size: 9px; } .caption { font-size: 8px; letter-spacing: 1px; } }

@@ -49,7 +49,7 @@ El contenido comercial estable puede generarse al compilar (SSG), una forma de r
 
 Los componentes de contenido se mantienen de servidor: no necesitan hooks ni eventos y pueden importar los datos sin enviarlos todos como estado del navegador. Un Server Component puede incluir un Client Component; no es necesario marcar el layout completo como cliente. `Link` se admite dentro de componentes servidor.
 
-El experimento real Link frente a `<a href>` y sus resultados se añadirán al ejecutar las pruebas. No se atribuirá una observación de Network antes de realizarla.
+El experimento Link frente a `<a href>` se documentará con sus resultados de Network en la etapa de evidencias.
 
 ## Estilos, imágenes y fuente (Parte 4, p. 5)
 
@@ -58,3 +58,9 @@ Las variables de `globals.css` contienen la paleta compartida y los valores base
 `next/image` genera variantes optimizadas, puede cargar de forma diferida y reserva espacio con dimensiones o un contenedor de tamaño definido al usar `fill`. `sizes` describe el tamaño real de la tarjeta según el ancho, evitando descargar siempre la imagen más grande. `alt` explica la imagen, no repite el nombre del archivo.
 
 `next/font` permite servir la fuente desde la aplicación en vez de pedir Google Fonts durante cada visita. `display: swap` evita ocultar el texto mientras se carga la fuente. El build con una fuente remota requiere comprobar disponibilidad de la descarga.
+
+La paleta inicial se oscureció tras medir el contraste con axe-core. La cabecera conserva azul y activo amarillo del anexo, pero facilita la lectura del texto pequeño. Las tarjetas tienen una elevación breve al hover y al foco: comunica que se pueden abrir. Se respeta `prefers-reduced-motion` para reducir transiciones.
+
+Los filtros son Client Components porque cambian estado sin cambiar URL. `ProductCatalog` recibe las tarjetas ya renderizadas como slots `ReactNode` desde la página servidor: no importa ProductCard ni convierte su implementación en código cliente. Solo necesita categoría, slug y el contenido recibido para seleccionar qué mostrar. Esto conserva el prerenderizado del listado y evita un servidor o base de datos innecesarios para seis productos.
+
+ContactForm usa estado para avisar de la revisión local y borra el aviso cuando cambia cualquier campo. No tiene backend: no envía correos ni simula un envío exitoso, de acuerdo con el alcance «solo interfaz» del laboratorio.

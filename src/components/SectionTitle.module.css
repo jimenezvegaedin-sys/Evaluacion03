@@ -1,5 +1,5 @@
 .header { text-align: center; max-width: 870px; margin: 0 auto 36px; }
-.header h1 { margin-bottom: 14px; font-size: clamp(24px, 3vw, 32px); font-weight: 750; text-transform: uppercase; }
+.title { margin-bottom: 14px; font-size: clamp(24px, 3vw, 32px); font-weight: 750; text-transform: uppercase; }
 .line { display: block; width: 44px; height: 2px; margin: 0 auto 20px; background: var(--red); }
 .description { margin: 0; font-size: 16px; }
 .eyebrow { color: var(--blue); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 12px; }

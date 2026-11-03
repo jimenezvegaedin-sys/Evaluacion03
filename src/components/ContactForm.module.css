@@ -1,0 +1,9 @@
+.form { display: grid; gap: 13px; }
+.form label { font-size: 11px; color: var(--muted); display: block; margin-bottom: 4px; font-weight: 550; }
+.form input, .form textarea { width: 100%; border: 1px solid #cbd0da; border-radius: 3px; padding: 10px 13px; background: var(--white); color: var(--ink); font-size: 13px; }
+.form input::placeholder, .form textarea::placeholder { color: #727987; }
+.form textarea { resize: vertical; min-height: 115px; }
+.form button { justify-self: start; border: 0; color: white; background: var(--red); padding: 12px 24px; border-radius: 3px; display: flex; align-items: center; gap: 20px; font-size: 13px; font-weight: 600; transition: background 180ms; }
+.form button:hover { background: #be2032; }
+.note { font-size: 11px; line-height: 1.6; color: var(--muted); margin: 0; }
+.status { background: #eef3ff; border-left: 3px solid var(--blue); padding: 12px; font-size: 13px; margin: 0; }

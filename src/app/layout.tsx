@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ContactShortcut from "@/components/ContactShortcut";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -14,7 +17,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="es">
       <body className={inter.variable}>
         <a className="skip-link" href="#contenido">Saltar al contenido</a>
+        <Navbar />
         <main id="contenido">{children}</main>
+        <Footer />
+        <ContactShortcut />
       </body>
     </html>
   );

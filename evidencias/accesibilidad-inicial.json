@@ -1,0 +1,103 @@
+[
+  {
+    "ruta": "/",
+    "regla": "color-contrast",
+    "impacto": "serious",
+    "nodos": [
+      {
+        "html": "<a class=\"cJzEcG_link cJzEcG_active\" aria-current=\"page\" href=\"/\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 3.38 (foreground color: #ffe24c, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/nosotros\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/servicios\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/productos\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/marcas\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/contacto\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  },
+  {
+    "ruta": "/productos",
+    "regla": "color-contrast",
+    "impacto": "serious",
+    "nodos": [
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/nosotros\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/servicios\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link cJzEcG_active\" aria-current=\"page\" href=\"/productos\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 3.38 (foreground color: #ffe24c, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/marcas\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/contacto\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<button type=\"button\" aria-pressed=\"true\" class=\"cMsOfa_selected\">Todas las categorías</button>",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #ffffff, background color: #e93646, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  },
+  {
+    "ruta": "/contacto",
+    "regla": "color-contrast",
+    "impacto": "serious",
+    "nodos": [
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/nosotros\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/servicios\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/productos\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link \" href=\"/marcas\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #ffffff, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<a class=\"cJzEcG_link cJzEcG_active\" aria-current=\"page\" href=\"/contacto\">",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 3.38 (foreground color: #ffe24c, background color: #5774ce, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "html": "<button type=\"submit\">Revisar mensaje <span aria-hidden=\"true\">→</span></button>",
+        "detalle": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #ffffff, background color: #e93646, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  }
+]

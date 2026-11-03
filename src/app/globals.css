@@ -1,8 +1,8 @@
 :root {
   --blue: #29459c;
-  --blue-light: #5774ce;
+  --blue-light: #3f5db8;
   --blue-deep: #19367f;
-  --red: #e93646;
+  --red: #ce2639;
   --yellow: #ffe24c;
   --ink: #24272e;
   --muted: #606675;
@@ -17,6 +17,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--white); font-family: var(--font-inter), Arial, sans-serif; font-size: 15px; line-height: 1.7; }
+main { min-height: 55vh; }
 a { color: inherit; text-decoration: none; }
 button, input, textarea, select { font: inherit; }
 button, a, input, textarea { -webkit-tap-highlight-color: transparent; }

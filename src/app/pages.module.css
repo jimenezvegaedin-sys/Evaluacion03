@@ -7,7 +7,9 @@
 .photo { position: relative; aspect-ratio: 1.3; }
 .photo img { object-fit: cover; }
 .photoTitle { background: #54585d; color: var(--white); text-align: center; font-size: 15px; padding: 14px; margin-bottom: 16px; }
-.service { background: #252525; padding: 30px; border-radius: var(--radius); }
+.service { background: #252525; padding: 30px; border-radius: var(--radius); display: flex; gap: 24px; min-height: 165px; }
+.service > svg { flex-shrink: 0; color: var(--red); margin-top: 3px; }
+.angled { clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%); padding-block: 100px; margin-block: 30px; }
 .service h2 { font-size: 19px; }
 .service p { color: #d7d7dc; margin: 0; font-size: 14px; }
 .brandLogo { position: relative; height: 65px; width: 170px; margin-bottom: 20px; }
