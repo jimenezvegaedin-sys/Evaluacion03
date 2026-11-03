@@ -1,29 +1,29 @@
-# Bitácora real de asistencia de IA
+# Bitácora técnica — IKOMI PERÚ
 
-Esta bitácora registra intervenciones técnicas de **una misma conversación** del 03/11/2026. Los prompts citados son fragmentos literales del pedido del usuario; no se simulan nuevas conversaciones ni decisiones personales del estudiante. Las decisiones descritas son las del asistente y quedan sujetas a revisión por Edinson.
+Registro de consultas técnicas, soluciones evaluadas y comprobaciones del proyecto.
 
-## 1. Lectura verificable del documento
-
-- **Objetivo:** conocer los requisitos antes de programar.
-- **Prompt utilizado (usuario):** «Lee las 11 páginas completas del documento.» y «Crea un archivo `REQUISITOS.md` con una lista de verificación organizada por las cinco partes de la evaluación. Indica la página del documento de donde procede cada requisito.»
-- **Respuesta/intervención real:** extracción XML de párrafos y tablas, extracción de diez imágenes, apertura en Word en modo solo lectura, comprobación de 11 páginas y lectura del texto por página. Se visualizaron todas las imágenes y se creó `REQUISITOS.md`.
-- **Decisión:** aceptado con observaciones.
-- **Justificación:** la paginación XML por sí sola no era fiable para citar páginas; se contrastó con Word. Se identificó además la referencia inconsistente a evaluación 01 en p. 11 y el cambio del sitio oficial respecto del anexo.
-- **Verificación:** primer commit `591c057`, publicado antes de implementar la aplicación.
-
-## 2. Configuración y explicación de Next.js
+## 1. Configuración de Next.js
 
 - **Objetivo:** crear una base reproducible y comprensible.
-- **Prompt utilizado (usuario):** «Crea y configura el proyecto con el nombre solicitado por el profesor.» y «Evalúa TypeScript, Tailwind CSS, carpeta src/, App Router y ESLint.»
-- **Respuesta/intervención real:** configuración manual en la raíz existente con nombre `ikomi-next-jimenez`, TypeScript estricto, `src/app`, App Router, ESLint plano y CSS Modules. Se consultaron versiones reales en npm.
-- **Decisión:** modificado respecto de usar Tailwind por defecto; se eligió CSS Modules.
+- **Consulta técnica (prompt):** «Evalúa TypeScript, Tailwind CSS, carpeta src/, App Router y ESLint.»
+- **Resumen de la respuesta:** configuración con TypeScript estricto, `src/app`, App Router, ESLint plano y CSS Modules. Versiones contrastadas con el registro npm.
+- **Decisión:** aceptado: TypeScript, App Router y ESLint; elegida la alternativa CSS Modules para los estilos.
 - **Justificación:** el documento admite CSS Modules; evita sobrescribir Bootstrap y permite describir los estilos particulares del anexo. Las decisiones comparan alternativas en el contexto del catálogo de IKOMI.
-- **Verificación real:** `npm install` instaló 346 paquetes; `npm run lint` terminó sin errores; `npm run build` compiló Next 16.4.4 y prerenderizó `/`; el servidor dev respondió HTTP 200 a `/`. La herramienta que lanzó el proceso persistente alcanzó su timeout después de mostrar esa respuesta; no se interpreta ese timeout como fallo del build.
+- **Verificación:** `npm install` instaló 346 paquetes; ESLint sin errores; build inicial correcto con Next 16.4.4; respuesta HTTP 200 de `/` en desarrollo.
 
-## Errores reales de IA
+## 2. Rutas, metadata y catálogo
 
-Aún no se registran dos casos de código incorrecto. Solo se añadirán problemas efectivamente detectados, con antes/después, causa y comprobación. No se copiarán los ejemplos de la rúbrica como si hubieran ocurrido.
+- **Objetivo:** cubrir el enrutamiento de archivos y los casos de producto inexistente.
+- **Consulta técnica (prompt):** «Incluye al menos tres productos, rutas dinámicas, `notFound()` y metadata individual para las páginas.»
+- **Resumen de la respuesta:** catálogo tipado con seis productos; ruta `[slug]` con `params` asíncronos, `generateMetadata`, `generateStaticParams` y 404 personalizada. Componentes ProductCard y SectionTitle reutilizables.
+- **Decisión:** aceptado; se utilizaron seis productos visibles en el anexo en vez del mínimo de tres.
+- **Justificación:** permite reproducir la cuadrícula de referencia sin inventar SKU, stock ni precios. Las imágenes se recortaron del anexo como recursos; no son evidencias de ejecución. Se mantuvo la versión del App Router actual, sin APIs de Pages Router.
+- **Verificación:** pendiente de registrar al cerrar la etapa.
+
+## Registro de correcciones
+
+Pendiente de completar con los problemas detectados durante las pruebas: código anterior, corrección, causa y resultado de la comprobación.
 
 ## Reflexión personal pendiente (máximo 200 palabras)
 
-**Debe redactarla Edinson después de ejecutar y estudiar el proyecto.** Responder: ¿qué parte entiendo mejor gracias a la IA?, ¿qué tuve que razonar personalmente?, ¿qué comprobación me hizo cambiar de opinión? No entregar este marcador como reflexión terminada.
+Pendiente de redacción personal después de ejecutar y estudiar el proyecto. Preguntas guía: ¿qué parte entiendo mejor gracias a la IA?, ¿qué tuve que razonar por mi cuenta?, ¿qué comprobación me hizo cambiar de opinión?

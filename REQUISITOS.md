@@ -1,6 +1,6 @@
 # Evaluación 03 — checklist trazable
 
-Fuente: `EC03-S12-JVENTURA-2026-02.docx`, 11 páginas. Lectura terminada antes de implementar código el 03/11/2026. Se extrajeron todos los párrafos y tablas mediante XML y se comprobaron las páginas con Microsoft Word en modo solo lectura (11 páginas). Se extrajeron y visualizaron las diez imágenes del archivo, incluidas las siete capturas del anexo. `[x]` significa comprobado, `[ ]` pendiente; no implica calificación concedida.
+Fuente: `EC03-S12-JVENTURA-2026-02.docx`, 11 páginas. Referencias de página contrastadas con la paginación de Microsoft Word. `[x]` significa comprobado y `[ ]` pendiente.
 
 ## Contexto y condiciones transversales
 
@@ -70,7 +70,7 @@ Fuente: `EC03-S12-JVENTURA-2026-02.docx`, 11 páginas. Lectura terminada antes d
 
 - [ ] **5.1** `BITACORA_IA.md` con ≥5 entradas reales, cada una con objetivo, prompt, resumen, decisión (aceptado/modificado/rechazado) y justificación (p. 5).
 - [ ] **5.2** ≥2 errores reales propuestos por IA, evidencia del problema, antes/después y explicación de corrección; no introducir fallos deliberados para completar la rúbrica (p. 5).
-- [ ] **5.3** Reflexión **personal** de ≤200 palabras: qué se comprendió gracias a IA y qué se razonó por cuenta propia (p. 5). Se dejará pendiente de redacción por el estudiante, según su solicitud.
+- [ ] **5.3** Reflexión **personal** de ≤200 palabras: qué se comprendió gracias a IA y qué se razonó por cuenta propia (p. 5).
 - [ ] **5.4** Preparar guía de exposición de cinco minutos y práctica de cambio pequeño en vivo; sustentación real sin IA (p. 5).
 - [ ] **Conclusiones:** cinco conclusiones personales. El original dice «después de la evaluación 01»; confirmar con docente si se refiere a la evaluación 03 (p. 11).
 - [ ] **Excelente:** bitácora completa, ≥2 errores reales, reflexión propia y capacidad demostrada de explicación/modificación (p. 7).
@@ -78,20 +78,20 @@ Fuente: `EC03-S12-JVENTURA-2026-02.docx`, 11 páginas. Lectura terminada antes d
 ## Entregables y proceso (p. 6, salvo indicación)
 
 - [ ] Repositorio https://github.com/jimenezvegaedin-sys/Evaluacion03 con ≥5 commits progresivos y descriptivos; verificar cada push.
-- [ ] Desplegar en plataforma explicada en clase (plataforma por confirmar con estudiante); preparar instrucciones reproducibles no equivale a desplegar.
+- [ ] Desplegar en plataforma explicada en clase (plataforma por confirmar); preparar instrucciones reproducibles no equivale a desplegar.
 - [ ] README: instalación, ejecución y árbol de componentes.
 - [ ] `DECISIONES.md` y `BITACORA_IA.md` en raíz.
 - [ ] `evidencias/` con build, Network y seis capturas responsive como mínimo.
 - [ ] Ejecutar `npm install`, `npm run dev` y `npm run build` y comprobar resultados reales.
-- [ ] Verificar producción con `npm run start`, rutas estáticas, tres detalles y ambos casos 404 (comprobación adicional del usuario).
-- [ ] Captura del historial real de GitHub en navegador (solicitud adicional del usuario).
-- [ ] Informe final requisito por requisito, resultados, archivos, commits, evidencias, despliegue y observaciones (solicitud adicional del usuario).
-- [ ] Revisar `git status`, diff y archivos a incluir antes de cada commit; no leer ni publicar secretos (solicitud adicional del usuario).
+- [ ] Verificar producción con `npm run start`, rutas estáticas, tres detalles y ambos casos 404 (verificación complementaria).
+- [ ] Captura del historial real de GitHub en navegador (evidencia complementaria).
+- [ ] Informe final requisito por requisito, resultados, archivos, commits, evidencias, despliegue y observaciones (revisión complementaria).
+- [ ] Revisar `git status`, diff y archivos a incluir antes de cada commit; no leer ni publicar secretos (control de publicación).
 
 ## Riesgos de calificación que no se resuelven generando archivos
 
 1. Sin bitácora: criterio 5 = 0 (p. 3).
-2. Justificaciones copiadas de IA: no suman; este repositorio contendrá borradores técnicos que el estudiante debe revisar y reformular (p. 3).
+2. Justificaciones copiadas de IA: no suman; las decisiones deben comprenderse y explicarse con palabras propias (p. 3).
 3. No explicar un fragmento: máximo 2 en el criterio relacionado (pp. 3, 7).
 4. Reflexión, conclusiones y sustentación dependen de la experiencia real del estudiante (pp. 5, 11).
 5. La capacidad general de p. 2 no sustituye los procedimientos concretos de pp. 4–6.

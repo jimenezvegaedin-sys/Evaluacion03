@@ -1,6 +1,6 @@
 # Decisiones técnicas — IKOMI PERÚ
 
-> Borrador técnico producido con asistencia de IA. Edinson debe contrastarlo con el código, explicarlo y reformularlo con sus propias palabras antes de entregar (documento, pp. 3 y 7). No se presenta como reflexión personal del estudiante.
+Configuración, alternativas y fundamentos aplicados al sitio corporativo IKOMI PERÚ.
 
 ## Configuración (Parte 1, p. 4)
 
