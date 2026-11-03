@@ -32,3 +32,9 @@ next-env.d.ts
 /evidencias/*.json
 /evidencias/*.txt
 /evidencias/*comprobacion.png
+
+# Documentación de apoyo; se conserva solo localmente
+/REQUISITOS.md
+/SUSTENTACION.md
+/INFORME_FINAL.md
+/evidencias/README.md

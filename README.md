@@ -24,12 +24,11 @@ npm run start
 
 ## Documentación
 
-- [Requisitos con páginas de origen](REQUISITOS.md)
 - [Decisiones y explicaciones técnicas](DECISIONES.md)
-- [Estado de evidencias](evidencias/README.md)
-- [Guía de sustentación de cinco minutos](SUSTENTACION.md)
-- [Conclusiones pendientes de revisión personal](CONCLUSIONES.md)
-- [Informe de revisión](INFORME_FINAL.md)
+- [Bitácora técnica](BITACORA_IA.md)
+- [Conclusiones](CONCLUSIONES.md)
+- [Capturas de evidencias](evidencias/)
+- [Experimento de navegación: Link frente a enlace nativo](evidencias/EXPERIMENTO_NETWORK.md)
 
 ## Rutas
 
